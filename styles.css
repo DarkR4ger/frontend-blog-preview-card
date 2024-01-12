@@ -1,0 +1,124 @@
+*, ::after,::before{
+  box-sizing: border-box;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  font-weight: 600, 800;
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+:root{
+  --clr-primary: hsl(47, 88%, 63%);
+  --clr-grey: hsl(0,0%,50%);
+}
+
+body{
+  min-height: 100vh;
+  font-family: 'Figtree', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--clr-primary);
+}
+
+.container{
+  margin: 10px;
+  max-width: 330px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 10px 10px black ;
+}
+
+
+.course-img{
+  width: 290px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: none;
+}
+
+.status{
+  margin-top: 15px;
+  background-color: var(--clr-primary);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.published{
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.course-name{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.course-desc{
+  margin-top: 20px;
+  color: var(--clr-grey);
+  font-size: 14px;
+}
+
+.author{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar{
+  width: 30px;
+}
+
+.author-name{
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+@media screen and (min-width: 600px) {
+  .container{
+    max-width: 380px;
+  }
+  .course-img{
+    width: 336px;
+    height: 201px;
+  }
+  .status{
+    font-size: 16px;
+  }
+  .published{
+    font-size: 14px;
+  }
+  .course-name{
+    font-size: 25px;
+  }
+  .course-desc{
+    font-size: 16px;
+  }
+
+
+
+
+  
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
